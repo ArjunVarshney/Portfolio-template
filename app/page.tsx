@@ -5,6 +5,8 @@ import profilePic from "../public/images/developer-pic.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icon";
+import HireMe from "@/components/HireMe";
+import lightBulb from "../public/images/lightBulb.svg";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -56,6 +58,14 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+        <HireMe />
+        <div className="absolute right-8 bottom-8 inline-block w-24">
+          <Image
+            src={lightBulb}
+            alt="Arjun Varshney"
+            className="w-full h-auto"
+          ></Image>
+        </div>
       </main>
     </>
   );
